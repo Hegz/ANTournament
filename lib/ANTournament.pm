@@ -7,4 +7,14 @@ get '/' => sub {
     template 'index';
 };
 
+get '/Pairings' => sub {
+
+    template 'index';
+};
+
+get '/Players' => sub {
+    template 'index';
+};
+
+
 true;
