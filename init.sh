@@ -33,4 +33,16 @@ fi
 eval "$(perl -Iperl5/lib/perl5 -Mlocal::lib=perl5)"
 
 # intall the modules from cpan
-cpan Dancer2 Template File::Slurper DBD::SQLite
+ctpan Dancer2 Template File::Slurper DBD::SQLite
+
+# Install bootstrap
+wget https://github.com/twbs/bootstrap/releases/download/v3.3.6/bootstrap-3.3.6-dist.zip
+unzip bootstrap-3.3.6-dist.zip
+cp -R bootstrap-3.3.6-dist/fonts public/
+cp -R bootstrap-3.3.6-dist/css/bootstrap.min.css bootstrap-3.3.6-dist/css/bootstrap.min.css.map public/css
+cp -R bootstrap-3.3.6-dist/css/bootstrap.min.css bootstrap-3.3.6-dist/css/bootstrap.min.css.map public/css
+cp -R bootstrap-3.3.6-dist/js/bootstrap.min.js public/javascripts
+rm -rf bootstrap-3.3.6-dist bootstrap-3.3.6-dist.zip
+
+# Install Jquery
+wget -P public/javascripts https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js
