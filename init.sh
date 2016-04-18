@@ -40,7 +40,6 @@ wget https://github.com/twbs/bootstrap/releases/download/v3.3.6/bootstrap-3.3.6-
 unzip bootstrap-3.3.6-dist.zip
 cp -R bootstrap-3.3.6-dist/fonts public/
 cp -R bootstrap-3.3.6-dist/css/bootstrap.min.css bootstrap-3.3.6-dist/css/bootstrap.min.css.map public/css
-cp -R bootstrap-3.3.6-dist/css/bootstrap.min.css bootstrap-3.3.6-dist/css/bootstrap.min.css.map public/css
 cp -R bootstrap-3.3.6-dist/js/bootstrap.min.js public/javascripts
 rm -rf bootstrap-3.3.6-dist bootstrap-3.3.6-dist.zip
 
