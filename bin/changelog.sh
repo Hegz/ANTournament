@@ -7,4 +7,4 @@ GIT_PAGER=cat git log --no-merges --format="%cd" --date=short | sort -u -r | whi
 	DATE=$(date +%F --date="$DATE -1 day")
 	GIT_PAGER=cat git log --no-merges --format=" * %s" --since=$DATE --until=$NEXT
 	NEXT=$DATE
-done
+done | grep -vi "updated changelog" | tee ../CHANGELOG

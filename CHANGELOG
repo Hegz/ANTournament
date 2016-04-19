@@ -1,9 +1,8 @@
 
 [2016-04-19]
- * Updated Changelog
+ * updated readme
  * Initilize the database with identities
  * moved init and start scripts
- * Updated Changelog
 
 [2016-04-18]
  * Fixed up initilization re:bootstrap and jquery
