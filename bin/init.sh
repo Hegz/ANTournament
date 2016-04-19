@@ -10,6 +10,7 @@ then
 	echo 'Template'
 	echo 'File::Slurper'
 	echo 'DBD::SQLite'
+	echo 'Cpanel::JSON::XS'
 	echo ''
 	echo 'This script can also be used after install to upgrade the modules'
 	echo 'needed for this project'
@@ -38,7 +39,7 @@ fi
 eval "$(perl -I../perl5/lib/perl5 -Mlocal::lib=../perl5)"
 
 # intall the modules from cpan
-cpan Dancer2 Template File::Slurper DBD::SQLite
+cpan Dancer2 Template File::Slurper DBD::SQLite Cpanel::JSON::XS
 
 # Install bootstrap
 if [ ! -e ../public/css/bootstrap.min.css ]
@@ -64,3 +65,6 @@ then
 	echo Installing jquery
 	wget https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js -O ../public/javascripts/jquery.min.js
 fi
+
+# Database Initilization
+perl init_identities.pl
