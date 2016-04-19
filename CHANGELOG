@@ -1,28 +1,6 @@
 
-[2016-04-18]
- * Fixed changelog printout
- * Started setup for manin categories
- * in Nav bar and main categories
- * Changlog management added
-
-[2016-04-15]
- * Licence added
- * First commit
-
-[2016-04-18]
- * Fixed up initilization re:bootstrap and jquery
- * fixed a typo in init.sh
- * Updating init to pull in bootstrap and jquery
- * Fixed changelog printout
- * Started setup for manin categories
- * in Nav bar and main categories
- * Changlog management added
-
-[2016-04-15]
- * Licence added
- * First commit
-
 [2016-04-19]
+ * Updated Changelog
  * Initilize the database with identities
  * moved init and start scripts
  * Updated Changelog
