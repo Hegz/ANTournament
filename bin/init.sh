@@ -11,6 +11,7 @@ then
 	echo 'File::Slurper'
 	echo 'DBD::SQLite'
 	echo 'Cpanel::JSON::XS'
+	echo 'LWP::Protocol::https'
 	echo ''
 	echo 'This script can also be used after install to upgrade the modules'
 	echo 'needed for this project'
@@ -24,7 +25,7 @@ then
 	wget http://search.cpan.org/CPAN/authors/id/H/HA/HAARG/local-lib-2.000018.tar.gz
 	tar -xzf local-lib-2.000018.tar.gz
 	cd local-lib-2.000018
-	perl Makefile.PL --bootstrap=$INSTDIRi/../perl5
+	perl Makefile.PL --bootstrap=$INSTDIR/../perl5
 	make test && make install
 
 	# Cleanup the lib::local install
@@ -39,7 +40,7 @@ fi
 eval "$(perl -I../perl5/lib/perl5 -Mlocal::lib=../perl5)"
 
 # intall the modules from cpan
-cpan Dancer2 Template File::Slurper DBD::SQLite Cpanel::JSON::XS
+cpan Dancer2 Template File::Slurper DBD::SQLite Cpanel::JSON::XS LWP::Protocol::https
 
 # Install bootstrap
 if [ ! -e ../public/css/bootstrap.min.css ]
