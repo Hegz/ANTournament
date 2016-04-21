@@ -18,8 +18,8 @@ then
 	read -rsp $'Press any key to continue, or CTRL+C to cancel.\n' -n1 key
 
 	# Download and install lib::Local to the ./perl5 directory
-	$TMPDIR=$(mktemp -d)
-	$INSTDIR=$(pwd)
+	TMPDIR=$(mktemp -d)
+	INSTDIR=$(pwd)
 	cd $TMPDIR
 	wget http://search.cpan.org/CPAN/authors/id/H/HA/HAARG/local-lib-2.000018.tar.gz
 	tar -xzf local-lib-2.000018.tar.gz
@@ -45,8 +45,8 @@ cpan Dancer2 Template File::Slurper DBD::SQLite Cpanel::JSON::XS
 if [ ! -e ../public/css/bootstrap.min.css ]
 then
 	echo Installing bootstrap
-	$TMPDIR=$(mktemp -d)
-	$INSTDIR=$(pwd)
+	TMPDIR=$(mktemp -d)
+	INSTDIR=$(pwd)
 	cd $TMPDIR
 
 	wget https://github.com/twbs/bootstrap/releases/download/v3.3.6/bootstrap-3.3.6-dist.zip
