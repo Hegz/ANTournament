@@ -1,4 +1,10 @@
 
+[2016-04-21]
+ * Added a basic requirements list
+ * Fixed missing module installation
+ * Added in apporpriate .gitignore files
+ * fixed typos with init
+
 [2016-04-19]
  * updated readme
  * Initilize the database with identities
